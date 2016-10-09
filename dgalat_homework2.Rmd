@@ -1,0 +1,71 @@
+---
+title: "Homework 2"
+author: "Dima Galat"
+date: "3 October 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{retrieving data}
+data.url <- "https://canvas.harvard.edu/courses/18032/files/2908415/download?wrap=1"
+data <- read_exel(data.url)
+```
+
+```{r cars}
+summary(cars)
+```
+
+## Homework questions
+1) Creating histograms for quantitative variables
+Create a histogram of your assign STATE for our group project. You will plot the bins based on party and candidates.
+?! "Table 2. Electoral & Pop Vote" C1 = STATE
+"2012 Pres General Results"
+"2012 Pres Primary Results"
+
+2) Creating box plots for quantitative variables
+Create a box and scattered plot based on party and candidates.
+
+3) Overlaying plots
+Create an overlay based on party red and blue lines as shown in Lynda.com exercise.
+
+4) Calculating frequencies
+Calculate the frequencies of wins for each party win with all states.
+
+5) Calculating descriptive
+Create a summary using descriptive statistics off voter turnout in all states. Return the values of percentage for each party.
+
+6) Using a single proportion: Hypothesis test and confidence interval
+Create a hypothesis statement based on your state regarding who will win the 2016 President Election. Use the historical l data provided the above mention data set.
+
+7) Using a single mean: Hypothesis test and confidence interval
+Create a Hypothesis test in RStudio based on the historical data regarding the outcome of your state. Find a source that shows the results from 1960 to 2012 and state the probability of the historical data who will win in 2016.  Use your state only!
+You must state both the Null (Ho) and Alternative (Ha).
+
+8) Using a single categorical variable: One sample chi-square test
+State how you would create a one sample Pearson chi-square test to test your hypothesis in question 7. Create a sample in RStudio based on Lynda.com practice exercise.
+
+9) Create a decision tree in your state based on voter turnout. Group your candidates in the following category based off of the historical data provided by the FEC.
+Clinton, Johnson, Stine, and Trump are the candidates. Based off of percentages off voter turnout in 2012 who will win your state.  So you will put them into categories like D (Dem), R (Rep), and O (Other).
+
+10) Create a scatter plot with liner regression line to show each counties voting pattern for each party
+Select your state and their counties to plot the strengthen and weakness for each district. Use a color scheme that match the party colors – red, blue, and green.  Yes, green is for other.
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
