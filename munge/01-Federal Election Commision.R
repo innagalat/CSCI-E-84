@@ -18,3 +18,4 @@ data.file.path <- file.path("data", "election_2012.Rda")
 data.url <- "http://www.fec.gov/pubrec/fe2012/federalelections2012.xls"
 get.excel.to.rda.if.required(data.url, data.file.path)
 rm(list = ls())
+rm(list = ls())
