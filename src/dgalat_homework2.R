@@ -2,8 +2,6 @@ source(file.path("src", "lib", "utils.R"))
 library('ProjectTemplate')
 reload.project()
 
-
-#load(data.file.path)
 states <- c("AK", "IN") 
 
 # 1) Creating histograms for quantitative variables
